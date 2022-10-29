@@ -1,5 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,200&display=swap');
 
-/*nutton shapes and colors*/
+body{
+    background-color: whitesmoke;
+    font-family: Fira Sans, sans-serif;
+}
+
+.heading{
+    text-align: center;
+    font-size: 5em;
+}
+
+.game-area{
+
+}
+
+.score-area{
+    
+}
+
+/*nutton shapes and colors
+*/
 .rock{
     border-radius: 50%;
     border: 1px solid #000;
