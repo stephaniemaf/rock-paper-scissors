@@ -1,0 +1,43 @@
+
+/*nutton shapes and colors*/
+.rock{
+    border-radius: 50%;
+    border: 1px solid #000;
+    background: pink;
+    font-size: 2em;
+    padding: 10px 20px;
+}
+
+.paper{
+    border-radius: 50%;
+    border: 1px solid #000;
+    background: rgb(224, 114, 230);
+    font-size: 2em;
+    padding: 10px 20px;
+}
+
+.scissors{
+    border-radius: 50%;
+    border: 1px solid #000;
+    background: rgb(84, 234, 169);
+    font-size: 2em;
+    padding: 10px 20px;
+}
+
+.lizard{
+    border-radius: 50%;
+    border: 1px solid #000;
+    background: rgb(92, 168, 245);
+    font-size: 2em;
+    padding: 10px 20px;
+}
+
+.spock{
+    border-radius: 50%;
+    border: 1px solid #000;
+    background: rgb(143, 36, 54);
+    font-size: 2em;
+    padding: 10px 20px;
+}
+
+
