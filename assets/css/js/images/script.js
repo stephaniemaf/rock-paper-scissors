@@ -27,9 +27,11 @@ function checkBtnPressed(){
 }
 
 function incrementScore(){
-
+    let prevScore = parseInt(document.getElementById("score").innerText);
+    document.getElementById("score").innerText = ++prevScore;
 }
 
 function incrementWrongAnswer(){
-    
+    let prevScore = parseInt(document.getElementById("incorrect").innerText);
+    document.getElementById("incorrect").innerText = ++prevScore;
 }
