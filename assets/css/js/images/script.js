@@ -26,12 +26,17 @@ function checkBtnPressed(){
 
 }
 
-function incrementScore(){
+function incrementWin(){
     let prevScore = parseInt(document.getElementById("score").innerText);
     document.getElementById("score").innerText = ++prevScore;
 }
 
-function incrementWrongAnswer(){
+function incrementLose(){
     let prevScore = parseInt(document.getElementById("incorrect").innerText);
     document.getElementById("incorrect").innerText = ++prevScore;
+}
+
+function incrementDraw(){
+    let prevScore = parseInt(document.getElementById("draw").innerText);
+    document.getElementById("draw").innerText = ++prevScore;
 }
