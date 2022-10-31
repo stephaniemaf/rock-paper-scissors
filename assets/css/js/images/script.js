@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function(){
     for(let button of buttons){
         button.addEventListener("click", function(){
             if(this.getAttribute("data-type")==="submit"){
-                checkAnswer();
+                checkBtnPressed();
             }
             else{
                 let gameType = this.getAttribute("data-type");
@@ -17,3 +17,19 @@ document.addEventListener("DOMContentLoaded", function(){
     }
 
 })
+
+function runGame(gameType){
+
+}
+
+function checkBtnPressed(){
+
+}
+
+function incrementScore(){
+
+}
+
+function incrementWrongAnswer(){
+    
+}
