@@ -4,42 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- <link rel="stylesheet" href="assets/css/style.css"> -->
     <title>Rock Paper Scissors Lizard Spock</title>
 </head>
 <body>
     <h1 class="heading">Rock Paper Scissors Lizard Spock</h1>
     <a href="https://bigbangtheory.fandom.com/wiki/Rock,_Paper,_Scissors,_Lizard,_Spock">Click here to see the rules of the game!!</a> 
    
-<section class="game">
+
     <div class="game-area">
         <p>Take your pick of: Rock, Paper, Scissors, Lizard, Spock?</p>
         <div class="controls-area">
-          <button class="btn btn--lrg" id="r-rock">Rock</button>
-          <button class="btn btn--lrg" id="p-paper">Paper</button> 
-          <button class="btn btn--lrg" id="s-scissors">Scissors</button>
-          <button class="btn btn--lrg" id="l-lizard">Lizard</button>
-          <button class="btn btn--lrg" id="s-spock">Spock</button>
+          <button class="btn btn--lrg" id="rock">Rock</button>
+          <button class="btn btn--lrg" id="paper">Paper</button> 
+          <button class="btn btn--lrg" id="scissors">Scissors</button>
+          <button class="btn btn--lrg" id="lizard">Lizard</button>
+          <button class="btn btn--lrg" id="spock">Spock</button>
           
            
         </div>
     </div>
     <div class="score-area" >
-        <div id="user-choice">
-            <h2>Player:</h2>
-        </div>
-        <div id="computer-choice">
-            <h2>Computer:</h2>
-        </div>
-        <div id="result-area">
-            <h2>Result:</h2>
-        </div>
+        
+        <h2>Player:<div id="user-choice"></div></h2>
+        <h2>Computer: <div id="computer-choice"></div></h2>
+        <h2>Result: <div id="result"></div></h2>
+      
     </div>
     
   
     
-</section>
+
     <script src="assets/js/script.js"></script>
-    <script src="assets/css/style.css"></script>
+    
 </body>
 </html>

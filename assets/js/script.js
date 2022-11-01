@@ -1,53 +1,53 @@
-const displayComp = document.getElementById("computer-choice")
-const displayUser = document.getElementById("user-choice")
-const displayResult = document.getElementById("result-area")
+const computerChoiceDisplay = document.getElementById("computer-choice")
+const userChoiceDisplay = document.getElementById("user-choice")
+const displayResult = document.getElementById("result")
 const possibleChoices = document.querySelectorAll("button")
 let userChoice
-let compChoice
+let computerChoice
 let result
 
 possibleChoices.forEach(possibleChoice => possibleChoice.addEventListener('click', (e) => {
     userChoice = e.target.id
-    displayUser.innerHTML = userChoice
-    computerChoice()
+    userChoiceDisplay.innerHTML = userChoice
+    compChoice()
     playGame()
   }))
 
-  function computerChoice(){
+  function compChoice(){
     const randomNumber = Math.floor(Math.random()* 5) + 1
 
     if(randomNumber === 1){
-        compChoice = "rock"
+        computerChoice = "rock"
     }
     if(randomNumber === 2){
-        compChoice = "paper"
+        computerChoice = "paper"
     }
     if(randomNumber === 3){
-        compChoice = "scissors"
+        computerChoice = "scissors"
     }
     if(randomNumber === 4){
-        compChoice = "lizard"
+        computerChoice = "lizard"
     }
     if(randomNumber === 5){
-        compChoice = "spock"
+        computerChoice = "spock"
     }
-    displayComp.innerHTML = computerChoice
+    computerChoiceDisplay.innerHTML = computerChoice
   }
 
-  function olayGame(){
-    if(compChoice === userChoice){
+  function playGame(){
+    if(computerChoice === userChoice){
         result = "You chose the same!! Draw"
     }
-    if (compChoice === "rock" && userChoice === "paper"){
+    if (computerChoice === "rock" && userChoice === "paper"){
         result = "WooHoo!!! You Won"
     }
-    if (compChoice === "rock" && userChoice === "scissors"){
+    if (computerChoice === "rock" && userChoice === "scissors"){
         result = "Awww You lost!"
     }
-    if (compChoice === "rock" && userChoice === "lizard"){
+    if (computerChoice === "rock" && userChoice === "lizard"){
         result = "Awww You lost!"
     }
-    if (compChoice === "rock" && userChoice === "spock"){
+    if (computerChoice === "rock" && userChoice === "spock"){
         result = "WooHoo!!! You Won"
     }
     if (computerChoice === "paper" && userChoice === "scissors") {
@@ -99,5 +99,5 @@ possibleChoices.forEach(possibleChoice => possibleChoice.addEventListener('click
         result = "Aww! You lost"  
     }  
 
-    resultDisplay.innerHTML = resultArea
+    displayResult.innerHTML = result
 }
