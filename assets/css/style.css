@@ -4,7 +4,9 @@ body{
     background-color: #3e4444;
     font-family: Fira Sans, sans-serif;
 }
-
+.icons{
+    text-align: center;
+}
 .heading{
     text-align: center;
     font-size: 3em;
