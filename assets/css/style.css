@@ -10,30 +10,48 @@ body{
 .heading{
     text-align: center;
     font-size: 3em;
-    color: #c1946a;
+    color: #8bba5a;
+}
+
+.game-area{
+    text-align: center;
+    box-sizing: border-box;
+    background-color: #c1946a;
+    border-style: solid;
+    width: 30%;
+    height: 30vh;
+    max-height: 450px;
+    max-width: 830px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1%;
 }
 
 #link{
     color: #000000;
     font-weight: bolder;
-    font-size: medium;
+    font-size: large;
+    
 }
 
-.game-area{
-    text-align: center;
-}
-
-#choose-btn{
+#choose{
     font-weight: 900;
     font-size: 2em;
 }
-.reload{
-    display: none;
-    margin-top: 2rem;
-    padding: 1rem;
-    background: green;
-    outline: none;
-    border: none;
-    cursor: pointer;
-    border-radius: 10px;
+
+.score-area{
+    text-align: center;
+   
+}
+#user-choice{
+    color: whitesmoke;
+    font-weight:200;
+}
+#computer-choice{
+    color: whitesmoke;
+    font-weight:200;
+}
+#result{
+    color: whitesmoke;
+    font-weight:200;
 }
