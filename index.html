@@ -9,23 +9,35 @@
 </head>
 <body>
     <h1 class="heading">Rock Paper Scissors Lizard Spock</h1>
-
+    <a href="https://bigbangtheory.fandom.com/wiki/Rock,_Paper,_Scissors,_Lizard,_Spock">Click here to see the rules of the game!!</a> 
+   
+<section class="game">
     <div class="game-area">
+        <h1>Your Choice:</h1>
+        <p>Take your pick of: Rock, Paper, Scissors, Lizard, Spock?</p>
         <div class="controls-area">
-            <button data-type="submit" class="rock">Rock</button>
-            <button data-type="submit" class="paper">Paper</button>
-            <button data-type="submit" class="scissors">Scissors</button>
-            <button data-type="submit" class="lizard">Lizard</button>
-            <button data-type="submit" class="spock">Spock</button>
+          <button class="btn btn--lrg" id="r-rock">Rock</button>
+          <button class="btn btn--lrg" id="p-paper">Paper</button> 
+          <button class="btn btn--lrg" id="s-scissors">Scissors</button>
+          <button class="btn btn--lrg" id="l-lizard">Lizard</button>
+          <button class="btn btn--lrg" id="s-spock">Spock</button>
+          
+           
         </div>
     </div>
-
     <div class="score-area" >
-        <p class="scores">Win:<span id="score">0</span></p>
-        <p class="scores">Lose:<span id="incorrect">0</span></p>
-        <p class="scores">Draw:<span id="draw">0</span></p>
+        <div class="userChoice">
+            <h2>Player:</h2>
+        </div>
+        <div class="computerChoice">
+            <h2>Computer:</h2>
+        </div>
     </div>
-
+    
+    <div class="result-area"></div>
+    <button data-type="reload" class="btn btn--gray">Reload</button>
+</section>
     <script src="assets/js/script.js"></script>
+    <script src="assets/css/style.css"></script>
 </body>
 </html>
