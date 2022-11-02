@@ -9,8 +9,15 @@
 </head>
 <body>
     <h1 class="heading">Rock Paper <br> Scissors Lizard Spock</h1>
-    <a href="https://bigbangtheory.fandom.com/wiki/Rock,_Paper,_Scissors,_Lizard,_Spock" id="link">Click here to see the rules of the game!!</a> 
+    <div align="center"><a href="https://bigbangtheory.fandom.com/wiki/Rock,_Paper,_Scissors,_Lizard,_Spock" id="link">Click here to see the rules of the game!!</a></div>
    
+    <div class="s-count" align="center" text-align="left">
+        <h4>
+            Player Score:<span id="playerScore">0</span> |
+            Computer Score:<span id="computerScore">0</span> |
+            Draws: <span id="drawScore">0</span>
+        </h4>
+    </div>
 
     <div class="game-area">
         <p id="choose">Take your pick:</p>
@@ -34,12 +41,7 @@
         <h2>Computer: <div id="computer-choice"></div></h2>
         <h2>Result: <div id="result"></div></h2>
     </div>
-    <div class="s-count">
-        <h4>Player Score:<p id="playerScore">0</p></h4>
-        <h4>Computer Score:<p id="computerScore">0</p></h2> </h4>
-        <h4>Draws: <p id="drawScore">0</p></h2></h4>
-    </div>
-    
+
     <script src="https://kit.fontawesome.com/9653894b6d.js" crossorigin="anonymous"></script>
     <script src="assets/js/script.js"></script>
     

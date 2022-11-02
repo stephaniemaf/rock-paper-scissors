@@ -53,7 +53,7 @@ function playGame(){
                 else if(computerChoice === "lizard")
                 {result = "WooHoo!!! You Won"
                 scorePlayer.innerHTML = parseInt(scorePlayer.innerHTML)+1}
-                else if(computerChoice === "spock")
+                else if(computerChoice === "paper")
                 {result = "Aww! You lost" 
                 scoreComputer.innerHTML = parseInt(scoreComputer.innerHTML)+1}
                 if(computerChoice === "spock")
@@ -68,8 +68,8 @@ function playGame(){
                 {result = "Aww! You lost"
                 scoreComputer.innerHTML = parseInt(scoreComputer.innerHTML)+1}
                 else if(computerChoice === "lizard")
-                {result = "WooHoo!!! You Won"
-                scorePlayer.innerHTML = parseInt(scorePlayer.innerHTML)+1}
+                {result = "Aww! You lost"
+                scoreComputer.innerHTML = parseInt(scoreComputer.innerHTML)+1}
                 else if(computerChoice === "spock")
                 {result = "WooHoo!!! You Won"
                 scorePlayer.innerHTML = parseInt(scorePlayer.innerHTML)+1}
@@ -85,8 +85,8 @@ function playGame(){
                 {result = "WooHoo!!! You Won"
                 scorePlayer.innerHTML = parseInt(scorePlayer.innerHTML)+1}
                 else if(computerChoice === "spock")
-                {result = "WooHoo!!! You Won"
-                scorePlayer.innerHTML = parseInt(scorePlayer.innerHTML)+1}
+                {result = "Awww You lost!"
+                scoreComputer.innerHTML = parseInt(scoreComputer.innerHTML)+1}
                 break;
             case "lizard":
                 if(computerChoice === "rock")
@@ -99,7 +99,7 @@ function playGame(){
                 {result = "Aww! You lost"
                 scoreComputer.innerHTML = parseInt(scoreComputer.innerHTML)+1}
                 else if(computerChoice === "spock")
-                {result = "Aww! You lost" 
+                {result = "Aww! You lost"
                 scoreComputer.innerHTML = parseInt(scoreComputer.innerHTML)+1}
                 break;
             case "spock":
