@@ -1,10 +1,10 @@
-var compPlay = document.getElementById("computer-choice")
-var userPlay = document.getElementById("user-choice")
-var resultDisp= document.getElementById("result")
-var choices = document.querySelectorAll("button")
+const compPlay = document.getElementById("computer-choice")
+const userPlay = document.getElementById("user-choice")
+const resultDisp= document.getElementById("result")
+const choices = document.querySelectorAll("button")
 let playerChoice
 let computerChoice
-var result
+let result
 
 choices.forEach(possibleChoice => possibleChoice.addEventListener('click', (e) => {
     playerChoice = e.target.id
@@ -14,7 +14,7 @@ choices.forEach(possibleChoice => possibleChoice.addEventListener('click', (e) =
   }))
 
   function compChoice(){
-    var randNum = Math.floor(Math.random()* 5) + 1
+    const randNum = Math.floor(Math.random()* 5) + 1
 
     if(randNum === 1){
         computerChoice = "rock"
