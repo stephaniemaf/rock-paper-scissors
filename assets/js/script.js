@@ -1,103 +1,123 @@
-const computerChoiceDisplay = document.getElementById("computer-choice")
-const userChoiceDisplay = document.getElementById("user-choice")
-const displayResult = document.getElementById("result")
-const possibleChoices = document.querySelectorAll("button")
-let userChoice
+const compPlay = document.getElementById("computer-choice")
+const userPlay = document.getElementById("user-choice")
+const resultDisp= document.getElementById("result")
+const choices = document.querySelectorAll("button")
+let playerChoice
 let computerChoice
 let result
 
-possibleChoices.forEach(possibleChoice => possibleChoice.addEventListener('click', (e) => {
-    userChoice = e.target.id
-    userChoiceDisplay.innerHTML = userChoice
+choices.forEach(possibleChoice => possibleChoice.addEventListener('click', (e) => {
+    playerChoice = e.target.id
+    userPlay.innerHTML = playerChoice
     compChoice()
     playGame()
   }))
 
   function compChoice(){
-    const randomNumber = Math.floor(Math.random()* 5) + 1
+    const randNum = Math.floor(Math.random()* 5) + 1
 
-    if(randomNumber === 1){
+    if(randNum === 1){
         computerChoice = "rock"
     }
-    if(randomNumber === 2){
+    if(randNum === 2){
         computerChoice = "paper"
     }
-    if(randomNumber === 3){
+    if(randNum === 3){
         computerChoice = "scissors"
     }
-    if(randomNumber === 4){
+    if(randNum === 4){
         computerChoice = "lizard"
     }
-    if(randomNumber === 5){
+    if(randNum === 5){
         computerChoice = "spock"
     }
-    computerChoiceDisplay.innerHTML = computerChoice
+    compPlay.innerHTML = computerChoice
   }
 
   function playGame(){
-    if(computerChoice === userChoice){
+    if(computerChoice === playerChoice){
         result = "You chose the same!! Draw"
     }
-    if (computerChoice === "rock" && userChoice === "paper"){
-        result = "WooHoo!!! You Won"
+    else if ( playerChoice === "paper"){
+      if(computerChoice === "rock"){
+        result = "WooHoo!!! You Won"}
     }
-    if (computerChoice === "rock" && userChoice === "scissors"){
-        result = "Awww You lost!"
+    else if (playerChoice === "scissors"){
+      if(computerChoice === "rock")
+        {result = "Awww You lost!"}
     }
-    if (computerChoice === "rock" && userChoice === "lizard"){
-        result = "Awww You lost!"
+    else if (playerChoice === "lizard"){
+      if(computerChoice === "rock")
+        {result = "Awww You lost!"}
     }
-    if (computerChoice === "rock" && userChoice === "spock"){
-        result = "WooHoo!!! You Won"
+    else if (playerChoice === "spock"){
+      if(computerChoice === "rock")
+        {result = "WooHoo!!! You Won"}
     }
-    if (computerChoice === "paper" && userChoice === "scissors") {
-        result = "WooHoo!!! You Won"
+    else if (playerChoice === "scissors") {
+      if(computerChoice === "paper")
+        {result = "WooHoo!!! You Won"}
     }
-    if (computerChoice === "paper" && userChoice === "rock") {
-        result = "Awww You lost!"
+    else if (playerChoice === "rock") {
+      if(computerChoice === "paper")
+        {result = "Awww You lost!"}
     }
-    if (computerChoice === "paper" && userChoice === "lizard") {
-        result = "WooHoo!!! You Won"
+    else if (playerChoice === "lizard") {
+      if(computerChoice === "paper" )
+        {result = "WooHoo!!! You Won"}
     }
-    if (computerChoice === "paper" && userChoice === "spock") {
-        result = "Awww You lost!"
+    else if (playerChoice === "spock") {
+      if(computerChoice === "paper")
+        {result = "Awww You lost!"}
     }
-    if (computerChoice === "scissors" && userChoice === "rock") {
-        result = "WooHoo!!! You Won"
+    else if (playerChoice === "rock") {
+      if(computerChoice === "scissors" )
+        {result = "WooHoo!!! You Won"}
     }
-    if (computerChoice === "scissors" && userChoice === "paper") {
-        result = "Aww! You lost"
+    else if (playerChoice === "paper") {
+      if(computerChoice === "scissors" )
+        {result = "Aww! You lost"}
     }
-    if (computerChoice === "scissors" && userChoice === "lizard") {
-        result = "Aww! You lost"
+    else if (playerChoice === "lizard") {
+      if(computerChoice === "scissors")
+        {result = "Aww! You lost"}
     }
-    if (computerChoice === "scissors" && userChoice === "spock") {
-        result = "WooHoo!!! You Won"
+    else if (playerChoice === "spock") {
+      if(computerChoice === "scissors")
+        {result = "WooHoo!!! You Won"}
     }
-    if (computerChoice === "lizard" && userChoice === "rock") {
-        result = "WooHoo!!! You Won" 
+    else if (playerChoice === "rock") {
+      if(computerChoice === "lizard")
+        {result = "WooHoo!!! You Won"} 
     }
-    if (computerChoice === "lizard" && userChoice === "scissors") {
-        result = "WooHoo!!! You Won"
+    else if (playerChoice === "scissors") {
+      if(computerChoice === "lizard")
+        {result = "WooHoo!!! You Won"}
     }
-    if (computerChoice === "lizard" && userChoice === "paper") {
-        result = "Aww! You lost" 
+    else if (playerChoice === "paper") {
+      if(computerChoice === "lizard")
+        {result = "Aww! You lost"} 
     }
-    if (computerChoice === "lizard" && userChoice === "spock") {
-        result = "Aww! You lost" 
+    else if (playerChoice === "spock") {
+      if(computerChoice === "lizard")
+        {result = "Aww! You lost"} 
     }
-    if (computerChoice === "spock" && userChoice === "rock") {
-        result = "Aww! You lost" 
+    else if (playerChoice === "rock") {
+      if(computerChoice === "spock")
+        {result = "Aww! You lost" }
     }
-    if (computerChoice === "spock" && userChoice === "scissors") {
-        result = "WooHoo!!! You Won" 
+    else if (playerChoice === "scissors") {
+      if(computerChoice === "spock")
+        {result = "WooHoo!!! You Won"} 
     }
-    if (computerChoice === "spock" && userChoice === "paper") {
-        result = "WooHoo!!! You Won" 
+    else if (playerChoice === "paper") {
+      if(computerChoice === "spock")
+        {result = "WooHoo!!! You Won"} 
     }
-    if (computerChoice === "spock" && userChoice === "lizard") {
+    else if(playerChoice === "lizard") {
+      if(computerChoice === "spock")
         result = "Aww! You lost"  
     }  
 
-    displayResult.innerHTML = result
+    resultDisp.innerHTML = result
 }
