@@ -2,6 +2,9 @@ const compPlay = document.getElementById("computer-choice")
 const userPlay = document.getElementById("user-choice")
 const resultDisp= document.getElementById("result")
 const choices = document.querySelectorAll("button")
+var scorePlayer = document.getElementById("playerScore")
+var scoreComputer = document.getElementById("computerScore")
+var scoreDraw = document.getElementById("drawScore")
 let playerChoice
 let computerChoice
 let result
@@ -13,111 +16,106 @@ choices.forEach(possibleChoice => possibleChoice.addEventListener('click', (e) =
     playGame()
   }))
 
-  function compChoice(){
+function compChoice(){
     const randNum = Math.floor(Math.random()* 5) + 1
-
-    if(randNum === 1){
-        computerChoice = "rock"
-    }
-    if(randNum === 2){
-        computerChoice = "paper"
-    }
-    if(randNum === 3){
-        computerChoice = "scissors"
-    }
-    if(randNum === 4){
-        computerChoice = "lizard"
-    }
-    if(randNum === 5){
-        computerChoice = "spock"
+    switch(randNum){
+        case 1:
+            computerChoice = "rock"
+            break;
+        case 2:
+            computerChoice = "paper"
+            break;
+        case 3: 
+            computerChoice = "scissors"
+            break;
+        case 4:
+            computerChoice = "lizard"
+            break;
+        case 5:
+            computerChoice = "spock"
+            break;
+        default:
+            computerChoice = "invalid"
     }
     compPlay.innerHTML = computerChoice
   }
 
-  function playGame(){
+function playGame(){
     if(computerChoice === playerChoice){
         result = "You chose the same!! Draw"
-    }
-    else if ( playerChoice === "paper"){
-      if(computerChoice === "rock"){
-        result = "WooHoo!!! You Won"}
-    }
-    else if (playerChoice === "scissors"){
-      if(computerChoice === "rock")
-        {result = "Awww You lost!"}
-    }
-    else if (playerChoice === "lizard"){
-      if(computerChoice === "rock")
-        {result = "Awww You lost!"}
-    }
-    else if (playerChoice === "spock"){
-      if(computerChoice === "rock")
-        {result = "WooHoo!!! You Won"}
-    }
-    else if (playerChoice === "scissors") {
-      if(computerChoice === "paper")
-        {result = "WooHoo!!! You Won"}
-    }
-    else if (playerChoice === "rock") {
-      if(computerChoice === "paper")
-        {result = "Awww You lost!"}
-    }
-    else if (playerChoice === "lizard") {
-      if(computerChoice === "paper" )
-        {result = "WooHoo!!! You Won"}
-    }
-    else if (playerChoice === "spock") {
-      if(computerChoice === "paper")
-        {result = "Awww You lost!"}
-    }
-    else if (playerChoice === "rock") {
-      if(computerChoice === "scissors" )
-        {result = "WooHoo!!! You Won"}
-    }
-    else if (playerChoice === "paper") {
-      if(computerChoice === "scissors" )
-        {result = "Aww! You lost"}
-    }
-    else if (playerChoice === "lizard") {
-      if(computerChoice === "scissors")
-        {result = "Aww! You lost"}
-    }
-    else if (playerChoice === "spock") {
-      if(computerChoice === "scissors")
-        {result = "WooHoo!!! You Won"}
-    }
-    else if (playerChoice === "rock") {
-      if(computerChoice === "lizard")
-        {result = "WooHoo!!! You Won"} 
-    }
-    else if (playerChoice === "scissors") {
-      if(computerChoice === "lizard")
-        {result = "WooHoo!!! You Won"}
-    }
-    else if (playerChoice === "paper") {
-      if(computerChoice === "lizard")
-        {result = "Aww! You lost"} 
-    }
-    else if (playerChoice === "spock") {
-      if(computerChoice === "lizard")
-        {result = "Aww! You lost"} 
-    }
-    else if (playerChoice === "rock") {
-      if(computerChoice === "spock")
-        {result = "Aww! You lost" }
-    }
-    else if (playerChoice === "scissors") {
-      if(computerChoice === "spock")
-        {result = "WooHoo!!! You Won"} 
-    }
-    else if (playerChoice === "paper") {
-      if(computerChoice === "spock")
-        {result = "WooHoo!!! You Won"} 
-    }
-    else if(playerChoice === "lizard") {
-      if(computerChoice === "spock")
-        result = "Aww! You lost"  
-    }  
-
+        scoreDraw.innerHTML = parseInt(scoreDraw.innerHTML)+1
+    }   else{
+        switch(playerChoice){
+            case "rock":
+                if(computerChoice === "scissors" )
+                {result = "WooHoo!!! You Won"
+                scorePlayer.innerHTML = parseInt(scorePlayer.innerHTML)+1}
+                else if(computerChoice === "lizard")
+                {result = "WooHoo!!! You Won"
+                scorePlayer.innerHTML = parseInt(scorePlayer.innerHTML)+1}
+                else if(computerChoice === "spock")
+                {result = "Aww! You lost" 
+                scoreComputer.innerHTML = parseInt(scoreComputer.innerHTML)+1}
+                if(computerChoice === "spock")
+                {result = "Aww! You lost" 
+                scoreComputer.innerHTML = parseInt(scoreComputer.innerHTML)+1}
+                break;
+            case "paper":
+                if(computerChoice === "rock")
+                {result = "WooHoo!!! You Won"
+                scorePlayer.innerHTML = parseInt(scorePlayer.innerHTML)+1}
+                else if(computerChoice === "scissors" )
+                {result = "Aww! You lost"
+                scoreComputer.innerHTML = parseInt(scoreComputer.innerHTML)+1}
+                else if(computerChoice === "lizard")
+                {result = "WooHoo!!! You Won"
+                scorePlayer.innerHTML = parseInt(scorePlayer.innerHTML)+1}
+                else if(computerChoice === "spock")
+                {result = "WooHoo!!! You Won"
+                scorePlayer.innerHTML = parseInt(scorePlayer.innerHTML)+1}
+                break;
+            case "scissors":
+                if(computerChoice === "rock")
+                {result = "Awww You lost!"
+                scoreComputer.innerHTML = parseInt(scoreComputer.innerHTML)+1}
+                else if(computerChoice === "paper")
+                {result = "WooHoo!!! You Won"
+                scorePlayer.innerHTML = parseInt(scorePlayer.innerHTML)+1}
+                else if(computerChoice === "lizard")
+                {result = "WooHoo!!! You Won"
+                scorePlayer.innerHTML = parseInt(scorePlayer.innerHTML)+1}
+                else if(computerChoice === "spock")
+                {result = "WooHoo!!! You Won"
+                scorePlayer.innerHTML = parseInt(scorePlayer.innerHTML)+1}
+                break;
+            case "lizard":
+                if(computerChoice === "rock")
+                {result = "Awww You lost!"
+                scoreComputer.innerHTML = parseInt(scoreComputer.innerHTML)+1}
+                else if(computerChoice === "paper" )
+                {result = "WooHoo!!! You Won"
+                scorePlayer.innerHTML = parseInt(scorePlayer.innerHTML)+1}
+                else if(computerChoice === "scissors")
+                {result = "Aww! You lost"
+                scoreComputer.innerHTML = parseInt(scoreComputer.innerHTML)+1}
+                else if(computerChoice === "spock")
+                {result = "Aww! You lost" 
+                scoreComputer.innerHTML = parseInt(scoreComputer.innerHTML)+1}
+                break;
+            case "spock":
+                if(computerChoice === "rock")
+                {result = "WooHoo!!! You Won"
+                scorePlayer.innerHTML = parseInt(scorePlayer.innerHTML)+1}
+                else if(computerChoice === "paper")
+                {result = "Awww You lost!"
+                scoreComputer.innerHTML = parseInt(scoreComputer.innerHTML)+1}
+                else if(computerChoice === "scissors")
+                {result = "WooHoo!!! You Won"
+                scorePlayer.innerHTML = parseInt(scorePlayer.innerHTML)+1}
+                else if(computerChoice === "lizard")
+                {result = "Aww! You lost"
+                scoreComputer.innerHTML = parseInt(scoreComputer.innerHTML)+1}             
+        }    
+    } 
     resultDisp.innerHTML = result
 }
