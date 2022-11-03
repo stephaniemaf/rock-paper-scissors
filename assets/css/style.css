@@ -125,7 +125,7 @@ body{
 @media(max-width:1200px){
     .game-area{
         width:100%;
-        margin-top: 50px;
+        margin-top: 30px;
     }
 
     .s-count{
