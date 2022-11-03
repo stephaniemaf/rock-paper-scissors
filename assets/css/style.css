@@ -34,6 +34,11 @@ body{
     
 }
 
+.s-count{
+    text-align: center;
+    align-items: center;
+}
+
 #choose{
     font-weight: 900;
     font-size: 2em;
@@ -54,4 +59,11 @@ body{
 #result{
     color: whitesmoke;
     font-weight:200;
+}
+
+@media (max-width: 320px){
+    .game-area{
+    height: 70vh
+    }
+    
 }
