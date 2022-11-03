@@ -101,8 +101,8 @@ body{
 
 @media(max-width:414px){
     .game-area{
-        width:100%;
-        margin-bottom: 40px;
+        width:110%;
+        margin-bottom: 60px;
     }
     .heading{
         font-size: 1.5em;
@@ -150,5 +150,6 @@ body{
     .controls-area{
         margin-top: 20px;
     }
+    
 
 }
