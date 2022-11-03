@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,200&display=swap');
 
 body{
-    background-color: #babdbd;
+    background-color: #5d6262;
     font-family: Fira Sans, sans-serif;
 }
 .icons{
@@ -29,7 +29,7 @@ body{
 .heading{
     text-align: center;
     font-size: 3em;
-    color: #2d3e1c;
+    color: #5aa608;
 }
 
 .game-area{
@@ -74,15 +74,15 @@ body{
    
 }
 #user-choice{
-    color: rgb(87, 85, 85);
+    color: whitesmoke;
     font-weight:200;
 }
 #computer-choice{
-    color: rgb(87, 85, 85);
+    color: whitesmoke;
     font-weight:200;
 }
 #result{
-    color: rgb(87, 85, 85);
+    color: whitesmoke;
     font-weight:200;
 }
 
