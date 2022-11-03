@@ -80,3 +80,27 @@ body{
         width:100%;
     }
 }
+
+@media(max-width:950px){
+    .game-area{
+        width:70%;
+        margin-top: 15%;
+        margin-bottom: 10%;
+    }
+    .icons{
+        margin-top: 10%;
+    }
+    .score-area{
+        margin-top: 7%;
+    }
+    .s-count{
+        padding-bottom: 5%;
+        margin-top: 5%;
+    }
+}
+
+@media(max-width:1200px){
+    .game-area{
+        width:100%;
+    }
+}
