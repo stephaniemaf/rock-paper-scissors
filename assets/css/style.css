@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,200&display=swap');
 
 body{
-    background-color: #5d6262;
+    background-color: #484f4f;
     font-family: Fira Sans, sans-serif;
 }
 .icons{
@@ -16,7 +16,7 @@ body{
     padding: .5em;
 }
 .btn--lrg{
-    background-color: #393939;
+    background-color: #484f4f;
     color: whitesmoke;
     border-radius: 8px;
     font-size: 16px;
@@ -29,7 +29,7 @@ body{
 .heading{
     text-align: center;
     font-size: 3em;
-    color: #baaf12;
+    color: #f2e394;
 }
 
 .game-area{
