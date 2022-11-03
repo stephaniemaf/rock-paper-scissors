@@ -84,7 +84,7 @@ body{
 @media(max-width:414px){
     .game-area{
         width:100%;
-        margin-bottom: 30px;
+        margin-bottom: 40px;
     }
     .heading{
         font-size: 1.5em;
@@ -118,5 +118,21 @@ body{
 @media(max-width:1200px){
     .game-area{
         width:100%;
+        margin-top: 100px;
+    }
+
+    .s-count{
+        margin-top: 50px;
+    }
+
+    .score-area{
+        margin-top: 25px;
+    }
+
+    .controls-area{
+        margin-top: 40px;
+    }
+    .icons{
+        padding: 10px;
     }
 }
