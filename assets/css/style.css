@@ -1,21 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,200&display=swap');
 
 body{
-    background-color: #3e4444;
+    background-color: #707373;
     font-family: Fira Sans, sans-serif;
 }
 .icons{
     text-align: center;
-   
+    display: flex;
+    justify-content: space-around;
+}
+.controls-area{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    padding: .5em;
+}
+.btn--lrg{
+    background-color: #393939;
+    color: whitesmoke;
+    border-radius: 8px;
+    font-size: 16px;
 }
 
-.controls-area{
-    margin-top: 20px;
+.btn--lrg:hover{
+    font-size: 20px;
 }
+
 .heading{
     text-align: center;
     font-size: 3em;
-    color: #8bba5a;
+    color: #2d3e1c;
 }
 
 .game-area{
@@ -45,6 +59,9 @@ body{
 .s-count{
     text-align: center;
     align-items: center;
+    padding: 1em;
+    font-size: 1.5rem;
+    font-weight: bolder;
 }
 
 #choose{
