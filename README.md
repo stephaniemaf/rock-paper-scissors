@@ -26,3 +26,30 @@ When you play this game you are playing against a computer. The computer chooses
 * I tested the game in different browsers: Chrome, ios safari, and Firefox
 * I confirmed that the results are always correct
 * I confirmed the fonts and colors are easy to read by running it threw Lighthouse
+
+# Bugs
+* When creating the game none of my buttons would work, changing document.getElementById to querySelectorAll fixed the issue
+
+# Unfixed bugs
+* None
+
+# Validator Testing
+*   HTML
+    * No errors where found when using the W3C validator
+*   CSS
+    * No errors where found when passing threw the official Jigsaw validator
+*   JavaScript
+    * No errors where found when passing threw the JS Hint validator
+
+# Deployment:
+* The site was deployed to GitHub Pages. The steps to deploy are:
+    * In the GitHub repository, click onto the Settings tab
+    * From the source section drop-down menu, select the Master Branch
+    * Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
+
+The Live link to site is here -
+
+# Credits 
+* Code for my JavaScript button event listener and variables was taken from [github](https://github.com/kubowania/rock-paper-scissors-x3/blob/main/rock-paper-scissors-examples/rock-paper-scissors-example-1/app.js)
+* My Icons where from [Font Awesome](https://fontawesome.com/)  
+* The font families I used threw out the website I got from [Google Fonts](https://fonts.google.com/about)
