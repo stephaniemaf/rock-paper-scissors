@@ -9,7 +9,7 @@ let playerChoice
 let computerChoice
 
 choices.forEach(possibleChoice => possibleChoice.addEventListener('click', (e) => {
-    playerChoice = document.getElementById(e.target.id).innerText
+    playerChoice = e.target.id
     userPlay.innerHTML = playerChoice
     compChoice()
     playGame()
