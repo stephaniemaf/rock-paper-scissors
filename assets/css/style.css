@@ -80,6 +80,24 @@ body{
 
     
 }
+@media(max-width:320px){
+    .game-area{
+        width:100%;
+        margin-bottom: 50px;
+    }
+    .heading{
+        font-size: 1.5em;
+    }
+    .anchor{
+        margin-top: 30px;
+    }
+    h4{
+        margin-top: 40px;
+    }
+    .controls-area{
+        margin-bottom: 70px;
+    }
+}
 
 @media(max-width:414px){
     .game-area{
@@ -117,7 +135,7 @@ body{
 
 @media(max-width:1200px){
     .game-area{
-        width:100%;
+        width:80%;
         margin-top: 100px;
     }
 
@@ -132,7 +150,5 @@ body{
     .controls-area{
         margin-top: 40px;
     }
-    .icons{
-        padding: 10px;
-    }
+
 }
