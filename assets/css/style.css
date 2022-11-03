@@ -6,6 +6,11 @@ body{
 }
 .icons{
     text-align: center;
+   
+}
+
+.controls-area{
+    margin-top: 20px;
 }
 .heading{
     text-align: center;
@@ -78,6 +83,9 @@ body{
 @media(max-width:414px){
     .game-area{
         width:100%;
+    }
+    .heading{
+        font-size: 1.5em;
     }
 }
 
