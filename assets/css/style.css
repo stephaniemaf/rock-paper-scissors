@@ -31,7 +31,9 @@ body{
     color: #000000;
     font-weight: bolder;
     font-size: large;
-    
+}
+.anchor{
+   text-align: center;
 }
 
 .s-count{
@@ -65,5 +67,16 @@ body{
     .game-area{
     height: 70vh
     }
+    .game-area{
+        padding: 10% 0;
+        width: 100%;
+    }
+
     
+}
+
+@media(max-width:414px){
+    .game-area{
+        width:100%;
+    }
 }

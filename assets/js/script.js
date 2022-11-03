@@ -7,10 +7,9 @@ var scoreComputer = document.getElementById("computerScore")
 var scoreDraw = document.getElementById("drawScore")
 let playerChoice
 let computerChoice
-let result
 
 choices.forEach(possibleChoice => possibleChoice.addEventListener('click', (e) => {
-    playerChoice = document.getElementById(e.target.id).innerHTML
+    playerChoice = document.getElementById(e.target.id).innerText
     userPlay.innerHTML = playerChoice
     compChoice()
     playGame()
@@ -41,6 +40,7 @@ function compChoice(){
   }
 
 function playGame(){
+    let result
     if(computerChoice === playerChoice){
         result = "You chose the same!! Draw"
         scoreDraw.innerHTML = parseInt(scoreDraw.innerHTML)+1
