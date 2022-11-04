@@ -3,7 +3,7 @@
 
 /*css styling for fonts colors and position of elements*/
 body{
-    background-color:#3D3E3E;
+    background-color:#3E3732;
     font-family: Fira Sans, sans-serif;
 }
 .icons{
@@ -31,7 +31,7 @@ body{
 .heading{
     text-align: center;
     font-size: 3em;
-    color: #82b74b;
+    color: #ffef96;
 }
 
 .game-area{
@@ -67,7 +67,7 @@ body{
     padding: 1em;
     font-size: 1.5rem;
     font-weight: bolder;
-    color: #FCF9E8;
+    color: #F8ECE2
 }
 
 #choose{
@@ -77,19 +77,19 @@ body{
 
 .score-area{
     text-align: center;
-    color:#82b74b;
+    color:#ffef96;
    
 }
 #user-choice{
-    color: whitesmoke;
+    color: #F8ECE2;
     font-weight:200;
 }
 #computer-choice{
-    color: whitesmoke;
+    color: #F8ECE2;
     font-weight:200;
 }
 #result{
-    color: whitesmoke;
+    color: #F8ECE2;
     font-weight:200;
 }
 /*media queries for small, medium, and large screens. This changes the
