@@ -1,7 +1,7 @@
 # Rock, Paper, Scissors, Lizard, Spock.
 This is a game of chance. Its an updated more difficult version then the original game of Rock,Paper,Scissors. Used by many as a fair choosing method between two people, similar to flipping a coin. It can help settle a dispute or make a group decision. This updated version of the game was first made famous by the popular Tv sitcom - Big Bang Theory.
 When you play this game you are playing against a computer. The computer chooses its play randomly which gives a fair result for the human player.Users of this game will learn the complex rules of Rock, Paper, Scissors, Lizard, Spock. This game was created with Adults and Children in mind.
-![AmiResponsiveImage](/assets/readme_images/amiresp.png)
+![AmiResponsiveImage](/assets/readme_images/amiresponsive.png)
 
 # Features
 ## Existing features:
@@ -10,7 +10,7 @@ When you play this game you are playing against a computer. The computer chooses
 
 * Link 
     * There is a link placed under the header that the user can click to view a complete list of rules for the game.
-    ![score and link](assets/readme_images/score.png)
+    ![score and link](assets/readme_images/link_score.png)
 * Score Tracker
     * Under the link there is a score tracker to keep track of player wins, computer wins or draws. This allows users to keep a count of how they are doing against the computer.
 
@@ -20,12 +20,13 @@ When you play this game you are playing against a computer. The computer chooses
 
 * Results
     * Under the body of the game there is the results window. Here the player can see the choice they have chosen and also the computer. Then it also shows the outcome of the game and it will tell the user if they have won or lost. The score tracker will then be updated with the result.
-    ![result](assets/readme_images/results.png)
+    ![result](assets/readme_images/results_area.png)
 
 # Testing
 * I tested the game in different browsers: Chrome, ios safari, and Firefox
 * I confirmed that the results are always correct
 * I confirmed the fonts and colors are easy to read by running it threw Lighthouse
+![lighthouse](assets/readme_images/lighthouse.png)
 
 # Bugs
 * When creating the game none of my buttons would work, changing document.getElementById to querySelectorAll fixed the issue
@@ -47,7 +48,7 @@ When you play this game you are playing against a computer. The computer chooses
     * From the source section drop-down menu, select the Master Branch
     * Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
 
-The Live link to site is here -
+The Live link to site is here - [Game-Link](https://stephaniemaf.github.io/rock-paper-scissors-lizard-spock/)
 
 # Credits 
 * Code for my JavaScript button event listener and variables was taken from [github](https://github.com/kubowania/rock-paper-scissors-x3/blob/main/rock-paper-scissors-examples/rock-paper-scissors-example-1/app.js)
