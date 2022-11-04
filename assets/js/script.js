@@ -1,3 +1,4 @@
+//global variables, button queries and event listener for buttons
 const compPlay = document.getElementById("computer-choice");
 const userPlay = document.getElementById("user-choice");
 const resultDisp= document.getElementById("result");
@@ -16,6 +17,8 @@ choices.forEach(possibleChoice => possibleChoice.addEventListener('click', (e) =
     playGame();
   }));
 
+  //random number generator for computer guesses
+  //switch statement for computer guesses
 function compChoice(){
     const randNum = Math.floor(Math.random()* 5) + 1;
     switch(randNum){
@@ -39,7 +42,7 @@ function compChoice(){
     }
     compPlay.innerHTML = computerChoice;
   }
-
+//switch statement for player choices and score tracker code 
 function playGame(){
     if(computerChoice === playerChoice){
         result = "You chose the same!! Draw";

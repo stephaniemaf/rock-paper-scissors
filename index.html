@@ -11,14 +11,17 @@
     <header>
         <h1 class="heading">Rock Paper <br> Scissors Lizard Spock</h1>
     </header>
+    <!--link to rules, this will open on a new page-->
     <div class="anchor"><a href="https://bigbangtheory.fandom.com/wiki/Rock,_Paper,_Scissors,_Lizard,_Spock" id="link" target="_blank">Click here to see the rules of the game!!</a></div>
-   
+    
+    <!--this code will keep track of the scores as you are playing-->
     <section class="s-count">
         Player Score:<span id="player-score">0</span> |
         Computer Score:<span id="computer-score">0</span> |
         Draws: <span id="draw-score">0</span> 
     </section>
 
+    <!--this is the game area it holds the icons and buttons-->
     <section class="game-area">
         <p id="choose">Take your pick:</p>
         <div class="icons">
@@ -36,12 +39,17 @@
           <button class="btn--lrg" id="spock">Spock</button>
         </div>
     </section>
+    
+    <!--Score area lets you see your reult, the computers result, and 
+     if you won or lost that specific round-->
     <section class="score-area" >
         <h2>Player: <span id="user-choice"></span></h2>
         <h2>Computer: <span id="computer-choice"></span></h2>
         <h2>Result: <span id="result"></span></h2>
     </section>
     
+    <!--These scripts allow the font to be used in all the files and also loads 
+    the javaScript file on the game and allows the browser to read it-->
     <script src="https://kit.fontawesome.com/9653894b6d.js" crossorigin="anonymous"></script>
     <script src="assets/js/script.js"></script>
     
